@@ -32,13 +32,19 @@ public class LoginController extends Application {
     @FXML
     private ImageView imageView;
 
+    private DatabaseConnection databaseConnection;
+
+    public LoginController() {
+        databaseConnection = new DatabaseConnection();
+    }
+
     @FXML
     void handleLoginButton(ActionEvent event) {
         String user = textField.getText();
         String pass = passwordField.getText();
 
-        // Simulated authentication (replace this with your own logic)
-        if ("admin".equals(user) && "password".equals(pass)) {
+        // Validate user credentials using the database
+        if (databaseConnection.validateLogin(user, pass)) {
             // Navigate to the next scene or functionality
             System.out.println("Login successful");
         } else {
