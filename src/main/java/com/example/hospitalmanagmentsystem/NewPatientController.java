@@ -14,24 +14,11 @@ public class NewPatientController {
 
     @FXML
     private void handleBack(ActionEvent event) {
-        try {
-            // Load the reception window FXML file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Reception.fxml"));
-            Parent root = loader.load();
+        // Get the current stage (window) of the event source
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-            // Create a new scene with the reception window content
-            Scene scene = new Scene(root);
-
-            // Get the stage information
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-            // Set the new scene
-            stage.setScene(scene);
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-            // Handle any potential errors loading the reception window
-        }
+        // Close the current stage (window)
+        stage.close();
     }
 
     @FXML
