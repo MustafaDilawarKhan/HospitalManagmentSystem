@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="329a3add-34e5-4c3d-aaf6-beabd244c8b8" name="Changes" comment="added database for the login windows">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/ReceptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/Reception.fxml" afterDir="false" />
+    <list default="true" id="329a3add-34e5-4c3d-aaf6-beabd244c8b8" name="Changes" comment="Added ReceptioController class and its user interface and it will appear on successful login">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/NewPatientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hospitalmanagmentsystem/NewPatient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/NewPatient.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/ReceptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/ReceptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717178671228</updated>
       <workItem from="1717178672346" duration="1128000" />
-      <workItem from="1717183592147" duration="4521000" />
+      <workItem from="1717183592147" duration="8384000" />
     </task>
     <task id="LOCAL-00001" summary="added database for the login windows">
       <option name="closed" value="true" />
@@ -120,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717185277212</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added ReceptioController class and its user interface and it will appear on successful login">
+      <option name="closed" value="true" />
+      <created>1717216412189</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717216412189</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +139,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="yyy" />
     <MESSAGE value="added database for the login windows" />
-    <option name="LAST_COMMIT_MESSAGE" value="added database for the login windows" />
+    <MESSAGE value="Added ReceptioController class and its user interface and it will appear on successful login" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ReceptioController class and its user interface and it will appear on successful login" />
   </component>
 </project>

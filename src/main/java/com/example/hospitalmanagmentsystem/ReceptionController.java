@@ -1,5 +1,10 @@
 package com.example.hospitalmanagmentsystem;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
 
@@ -7,8 +12,19 @@ public class ReceptionController {
 
     @FXML
     private void handleAddNewPatient(ActionEvent event) {
-        // Implement the action for adding a new patient
-        System.out.println("Add New Patient button clicked");
+        try {
+            // Load the NewPatient.fxml file
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("NewPatient.fxml"));
+            Parent root = loader.load();
+
+            // Create a new stage
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("New Patient Form");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
