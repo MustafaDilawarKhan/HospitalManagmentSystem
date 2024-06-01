@@ -45,8 +45,16 @@ public class LoginController extends Application {
 
         // Validate user credentials using the database
         if (databaseConnection.validateLogin(user, pass)) {
-            // Navigate to the next scene or functionality
-            System.out.println("Login successful");
+            // Navigate to the Reception scene or functionality
+            try {
+                Stage stage = (Stage) loginButton.getScene().getWindow();
+                Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Reception.fxml")));
+                stage.setScene(new Scene(root, 800, 600));
+                stage.setTitle("Hospital Management System - Reception");
+                stage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Login Error");
