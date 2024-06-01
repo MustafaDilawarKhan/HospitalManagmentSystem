@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="329a3add-34e5-4c3d-aaf6-beabd244c8b8" name="Changes" comment="Added NewPatientController class and its user interface. Some implementations are left just done with the back button. But all implementations will be done accordingly.">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="329a3add-34e5-4c3d-aaf6-beabd244c8b8" name="Changes" comment="Added dropdown options to NewPatient FXML file. The dropdown shows NIC and Passport selections">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/NewPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/NewPatient.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717223184365</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added dropdown options to NewPatient FXML file. The dropdown shows NIC and Passport selections">
+      <option name="closed" value="true" />
+      <created>1717228074206</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717228074206</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +141,7 @@
     <MESSAGE value="added database for the login windows" />
     <MESSAGE value="Added ReceptioController class and its user interface and it will appear on successful login" />
     <MESSAGE value="Added NewPatientController class and its user interface. Some implementations are left just done with the back button. But all implementations will be done accordingly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added NewPatientController class and its user interface. Some implementations are left just done with the back button. But all implementations will be done accordingly." />
+    <MESSAGE value="Added dropdown options to NewPatient FXML file. The dropdown shows NIC and Passport selections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dropdown options to NewPatient FXML file. The dropdown shows NIC and Passport selections" />
   </component>
 </project>
