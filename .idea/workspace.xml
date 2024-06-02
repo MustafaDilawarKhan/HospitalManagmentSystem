@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="329a3add-34e5-4c3d-aaf6-beabd244c8b8" name="Changes" comment="Added functionality to NewPatient form">
+    <list default="true" id="329a3add-34e5-4c3d-aaf6-beabd244c8b8" name="Changes" comment="Added methods and functionalities to New Patient GUI. Fixed Room availability and adding problems.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/Room.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/NewPatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/NewPatientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/NewPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/NewPatient.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,31 +56,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.LoginController.executor": "Run",
-    "Application.NewPatientController.executor": "Run",
-    "Application.ReceptionController.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/HospitalManagmentSystem",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LoginController.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NewPatientController.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReceptionController.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Room.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Hccc/Hospital management system&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -100,7 +101,7 @@
       <workItem from="1717178672346" duration="1128000" />
       <workItem from="1717183592147" duration="9125000" />
       <workItem from="1717244356164" duration="102000" />
-      <workItem from="1717336331991" duration="11247000" />
+      <workItem from="1717336331991" duration="16901000" />
     </task>
     <task id="LOCAL-00001" summary="added database for the login windows">
       <option name="closed" value="true" />
@@ -150,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717350218724</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added methods and functionalities to New Patient GUI. Fixed Room availability and adding problems.">
+      <option name="closed" value="true" />
+      <created>1717353908930</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717353908930</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +173,7 @@
     <MESSAGE value="Added dropdown options to NewPatient FXML file. The dropdown shows NIC and Passport selections" />
     <MESSAGE value="Enhanced UI components of Patient Form : NewPatient.fxml via scene builder" />
     <MESSAGE value="Added functionality to NewPatient form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to NewPatient form" />
+    <MESSAGE value="Added methods and functionalities to New Patient GUI. Fixed Room availability and adding problems." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added methods and functionalities to New Patient GUI. Fixed Room availability and adding problems." />
   </component>
 </project>
