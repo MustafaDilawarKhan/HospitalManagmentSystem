@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="329a3add-34e5-4c3d-aaf6-beabd244c8b8" name="Changes" comment="Enhanced UI components of Patient Form : NewPatient.fxml via scene builder">
+    <list default="true" id="329a3add-34e5-4c3d-aaf6-beabd244c8b8" name="Changes" comment="Added functionality to NewPatient form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/NewPatientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/NewPatientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/NewPatient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/NewPatient.fxml" afterDir="false" />
     </list>
@@ -59,10 +58,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.LoginController.executor": "Profiler#1",
+    "Application.LoginController.executor": "Run",
     "Application.NewPatientController.executor": "Run",
+    "Application.ReceptionController.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/HospitalManagmentSystem",
@@ -101,7 +100,7 @@
       <workItem from="1717178672346" duration="1128000" />
       <workItem from="1717183592147" duration="9125000" />
       <workItem from="1717244356164" duration="102000" />
-      <workItem from="1717336331991" duration="7609000" />
+      <workItem from="1717336331991" duration="11247000" />
     </task>
     <task id="LOCAL-00001" summary="added database for the login windows">
       <option name="closed" value="true" />
@@ -143,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717233816886</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added functionality to NewPatient form">
+      <option name="closed" value="true" />
+      <created>1717350218724</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717350218724</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +163,7 @@
     <MESSAGE value="Added NewPatientController class and its user interface. Some implementations are left just done with the back button. But all implementations will be done accordingly." />
     <MESSAGE value="Added dropdown options to NewPatient FXML file. The dropdown shows NIC and Passport selections" />
     <MESSAGE value="Enhanced UI components of Patient Form : NewPatient.fxml via scene builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enhanced UI components of Patient Form : NewPatient.fxml via scene builder" />
+    <MESSAGE value="Added functionality to NewPatient form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added functionality to NewPatient form" />
   </component>
 </project>

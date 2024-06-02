@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.collections.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <!-- Added import -->
 
-<AnchorPane prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.NewPatientController">
+<AnchorPane prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.NewPatientController">
     <children>
         <Pane prefHeight="550.0" prefWidth="840.0" style="-fx-background-color: #5A9CA3;">
             <children>
@@ -56,7 +62,9 @@
                   <Font name="Yu Gothic Bold" size="18.0" />
                </font></Label>
                 <ChoiceBox fx:id="roomComboBox" layoutX="271.0" layoutY="274.0" prefWidth="150.0" style="-fx-background-color: #032D30;" />
-                <Label layoutX="35.0" layoutY="316.0" prefHeight="17.0" prefWidth="200.0" text="Time :" textFill="#FFFFFF">
+
+
+                <Label layoutX="35.0" layoutY="316.0" prefHeight="17.0" prefWidth="200.0" text="Date : " textFill="#FFFFFF">
                <font>
                   <Font name="Yu Gothic Bold" size="18.0" />
                </font></Label>
@@ -73,7 +81,7 @@
                <effect>
                   <InnerShadow />
                </effect></Button>
-            <DatePicker fx:id="datePicker" layoutX="271.0" layoutY="319.0" />
+            <DatePicker fx:id="datePicker" layoutX="270.0" layoutY="314.0" />
             </children>
         </Pane>
     </children>
