@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #5A9CA3;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.Department">
+    <children>
+        <TableView fx:id="tableView" layoutX="0.0" layoutY="40.0" prefHeight="350.0" prefWidth="700.0" style="-fx-background-color: #5A9CA3;" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+            <columns>
+                <TableColumn fx:id="departmentColumn" prefWidth="158.0" text="Department" />
+                <TableColumn fx:id="phoneColumn" prefWidth="540.0" text="Phone Number" />
+            </columns>
+        </TableView>
+        <Label layoutX="145.0" layoutY="11.0" prefHeight="20.0" prefWidth="105.0" text="Department" textFill="WHITE" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="11.0" />
+        <Label layoutX="431.0" layoutY="11.0" prefHeight="20.0" prefWidth="150.0" text="Phone Number" textFill="WHITE" AnchorPane.leftAnchor="431.0" AnchorPane.topAnchor="11.0" />
+        <Button layoutX="279.0" layoutY="437.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #000000; -fx-text-fill: white;" text="BACK" />
+    </children>
+</AnchorPane>
