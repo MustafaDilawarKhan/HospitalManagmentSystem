@@ -90,7 +90,6 @@ public class NewPatientController extends Application {
         System.out.println("Gender: " + gender);
         System.out.println("Disease: " + disease);
         System.out.println("Room Number: " + roomNumber);
-        System.out.println("Time: " + time);
         System.out.println("Deposit: " + deposit);
 
         // Check room availability
@@ -101,7 +100,7 @@ public class NewPatientController extends Application {
             // Insert into database
             try {
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_management_system", "root", "1234");
-                String query = "INSERT INTO patient_info (ID, Number, Name, Gender, Disease, Room_Number, Time, Deposit, Date) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                String query = "INSERT INTO patient_info (ID, Number, Name, Gender, Disease, Room_Number, Deposit, Date) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
                 PreparedStatement statement = connection.prepareStatement(query);
                 statement.setString(1, idType);
                 statement.setString(2, number);
@@ -109,9 +108,8 @@ public class NewPatientController extends Application {
                 statement.setString(4, gender);
                 statement.setString(5, disease);
                 statement.setString(6, roomNumber);
-                statement.setString(7, time);
-                statement.setString(8, deposit);
-                statement.setString(9, LocalDate.now().toString()); // Current date
+                statement.setString(7, deposit);
+                statement.setString(8, LocalDate.now().toString()); // Current date
                 statement.executeUpdate();
 
                 // Update room availability to "Occupied"
