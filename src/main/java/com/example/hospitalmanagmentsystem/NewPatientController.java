@@ -118,11 +118,18 @@ public class NewPatientController extends Application {
                 updateStatement.setString(1, roomNumber);
                 updateStatement.executeUpdate();
 
+
                 connection.close();
+                Alert successAlert = new Alert(Alert.AlertType.INFORMATION);
+                successAlert.setTitle("Success");
+                successAlert.setHeaderText(null);
+                successAlert.setContentText("Patient record added successfully!");
+                successAlert.showAndWait();
                 System.out.println("Patient added successfully!");
             } catch (SQLException e) {
                 System.out.println("Error adding patient: " + e.getMessage());
             }
+
         } else {
             // Display warning if room is already occupied
             Alert alert = new Alert(Alert.AlertType.WARNING);
