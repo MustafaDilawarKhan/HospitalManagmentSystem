@@ -29,14 +29,36 @@ public class ReceptionController {
 
     @FXML
     private void handleRoom(ActionEvent event) {
-        // Implement the action for handling Room
-        System.out.println("Room button clicked");
+        try {
+            // Load the Room.fxml file
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Room.fxml"));
+            Parent root = loader.load();
+
+            // Create a new stage
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Room Information");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     private void handleDepartment(ActionEvent event) {
-        // Implement the action for handling Department
-        System.out.println("Department button clicked");
+        try {
+            // Load the Department.fxml file
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Department.fxml"));
+            Parent root = loader.load();
+
+            // Create a new stage
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Department Information");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML

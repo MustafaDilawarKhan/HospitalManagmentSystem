@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.ReceptionController"
-            style="-fx-background-color: #FFFFFF;">
+<AnchorPane style="-fx-background-color: #FFFFFF;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.hospitalmanagmentsystem.ReceptionController">
     <children>
-        <Pane fx:id="headerPane" prefHeight="150.0" prefWidth="1525.0" style="-fx-background-color: #6DA4AA;"
-              AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <Pane fx:id="headerPane" prefHeight="150.0" prefWidth="1525.0" style="-fx-background-color: #6DA4AA;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
                 <HBox layoutX="30.0" layoutY="15.0" spacing="15.0">
-                    <Button text="Add New Patient" onAction="#handleAddNewPatient" style="-fx-background-color: #F6D776;"/>
-                    <Button text="Room" onAction="#handleRoom" style="-fx-background-color: #F6D776;"/>
-                    <Button text="Department" onAction="#handleDepartment" style="-fx-background-color: #F6D776;"/>
-                    <Button text="All Employee Info" onAction="#handleAllEmployeeInfo" style="-fx-background-color: #F6D776;"/>
-                    <Button text="Patient Info" onAction="#handlePatientInfo" style="-fx-background-color: #F6D776;"/>
-                    <Button text="Patient Discharge" onAction="#handlePatientDischarge" style="-fx-background-color: #F6D776;"/>
-                    <Button text="Update Patient Details" onAction="#handleUpdatePatientDetails" style="-fx-background-color: #F6D776;"/>
-                    <Button text="Hospital Ambulance" onAction="#handleHospitalAmbulance" style="-fx-background-color: #F6D776;"/>
-                    <Button text="Search Room" onAction="#handleSearchRoom" style="-fx-background-color: #F6D776;"/>
-                    <Button text="Logout" onAction="#handleLogout" style="-fx-background-color: #F6D776;"/>
+                    <Button onAction="#handleAddNewPatient" style="-fx-background-color: #F6D776;" text="Add New Patient" />
+                    <Button onAction="#handleRoom" style="-fx-background-color: #F6D776;" text="Room" />
+                    <Button onAction="#handleDepartment" style="-fx-background-color: #F6D776;" text="Department" />
+                    <Button onAction="#handleAllEmployeeInfo" style="-fx-background-color: #F6D776;" text="All Employee Info" />
+                    <Button onAction="#handlePatientInfo" style="-fx-background-color: #F6D776;" text="Patient Info" />
+                    <Button onAction="#handlePatientDischarge" style="-fx-background-color: #F6D776;" text="Patient Discharge" />
+                    <Button onAction="#handleUpdatePatientDetails" style="-fx-background-color: #F6D776;" text="Update Patient Details" />
+                    <Button onAction="#handleHospitalAmbulance" style="-fx-background-color: #F6D776;" text="Hospital Ambulance" />
+                    <Button onAction="#handleSearchRoom" style="-fx-background-color: #F6D776;" text="Search Room" />
+                    <Button onAction="#handleLogout" style="-fx-background-color: #F6D776;" text="Logout" />
                 </HBox>
             </children>
         </Pane>
-        <Pane fx:id="contentPane" prefHeight="670.0" prefWidth="1525.0" style="-fx-background-color: #6DA4AA;"
-              AnchorPane.topAnchor="150.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+        <Pane fx:id="contentPane" prefHeight="670.0" prefWidth="1525.0" style="-fx-background-color: #6DA4AA;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
             <!-- Additional content can be added here -->
         </Pane>
     </children>
