@@ -83,7 +83,18 @@ public class ReceptionController {
     @FXML
     private void handlePatientDischarge(ActionEvent event) {
         System.out.println("Patient Discharge button clicked");
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/hospitalmanagmentsystem/PatientDischarge.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Patient Discharge");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+
 
     @FXML
     private void handleUpdatePatientDetails(ActionEvent event) {
