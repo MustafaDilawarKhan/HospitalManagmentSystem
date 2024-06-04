@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="329a3add-34e5-4c3d-aaf6-beabd244c8b8" name="Changes" comment="PatientsDischargeController added.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/UpdatePatientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/UpdatePatient.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +34,12 @@
     &quot;assignee&quot;: &quot;MustafaDilawarKhan&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MustafaDilawarKhan/HospitalManagmentSystem.git",
-    "accountId": "5f5780d1-0783-4e50-b293-c55195ace15e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MustafaDilawarKhan/HospitalManagmentSystem.git&quot;,
+    &quot;accountId&quot;: &quot;5f5780d1-0783-4e50-b293-c55195ace15e&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -66,6 +68,7 @@
     "Application.PatientsInfoController.executor": "Run",
     "Application.ReceptionController.executor": "Run",
     "Application.Room.executor": "Run",
+    "Application.UpdatePatientController.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
