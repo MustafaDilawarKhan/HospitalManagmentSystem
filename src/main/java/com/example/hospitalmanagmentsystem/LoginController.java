@@ -43,9 +43,9 @@ public class LoginController extends Application {
         String user = textField.getText();
         String pass = passwordField.getText();
 
-        // Validate user credentials using the database
+
         if (databaseConnection.validateLogin(user, pass)) {
-            // Navigate to the Reception scene or functionality
+
             try {
                 Stage stage = (Stage) loginButton.getScene().getWindow();
                 Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Reception.fxml")));

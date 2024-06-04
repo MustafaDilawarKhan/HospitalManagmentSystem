@@ -68,7 +68,16 @@ public class ReceptionController {
 
     @FXML
     private void handlePatientInfo(ActionEvent event) {
-        System.out.println("Patient Info button clicked");
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/hospitalmanagmentsystem/PatientsInfo.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Patient Information");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
