@@ -57,7 +57,6 @@ public class UpdatePatientController extends Application {
 
     @FXML
     private void initialize() {
-        // Populate the ComboBox with patient names fetched from the database
         populateComboBox();
     }
 
@@ -139,7 +138,8 @@ public class UpdatePatientController extends Application {
 
     @FXML
     private void handleBack() {
-        // Handle back button action, e.g., navigate to another scene
+       Stage stage = (Stage) back.getScene().getWindow();
+       stage.close();
     }
 
     private void showAlert(String message) {

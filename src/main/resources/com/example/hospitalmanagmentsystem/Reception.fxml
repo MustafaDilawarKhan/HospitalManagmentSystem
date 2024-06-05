@@ -15,7 +15,6 @@
                     <Button onAction="#handlePatientInfo" style="-fx-background-color: #F6D776;" text="Patient Info" />
                     <Button onAction="#handlePatientDischarge" style="-fx-background-color: #F6D776;" text="Patient Discharge" />
                     <Button onAction="#handleUpdatePatientDetails" style="-fx-background-color: #F6D776;" text="Update Patient Details" />
-                    <Button onAction="#handleHospitalAmbulance" style="-fx-background-color: #F6D776;" text="Hospital Ambulance" />
                     <Button onAction="#handleSearchRoom" style="-fx-background-color: #F6D776;" text="Search Room" />
                     <Button onAction="#handleLogout" style="-fx-background-color: #F6D776;" text="Logout" />
                 </HBox>
