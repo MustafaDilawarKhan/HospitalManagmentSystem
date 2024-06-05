@@ -17,7 +17,7 @@ public class ReceptionController extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Reception.fxml"));
         primaryStage.setTitle("Hospital Management System - Reception");
-        primaryStage.setScene(new Scene(root, 532, 608));
+        primaryStage.setScene(new Scene(root, 532, 566));
         primaryStage.show();
     }
 

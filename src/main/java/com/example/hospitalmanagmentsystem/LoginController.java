@@ -49,7 +49,7 @@ public class LoginController extends Application {
             try {
                 Stage stage = (Stage) loginButton.getScene().getWindow();
                 Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Reception.fxml")));
-                stage.setScene(new Scene(root, 800, 600));
+                stage.setScene(new Scene(root, 532, 566));
                 stage.setTitle("Hospital Management System - Reception");
                 stage.show();
             } catch (Exception e) {

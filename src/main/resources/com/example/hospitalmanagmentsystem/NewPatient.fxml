@@ -16,15 +16,15 @@
 
 <AnchorPane prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.NewPatientController">
     <children>
-        <Pane prefHeight="550.0" prefWidth="840.0" style="-fx-background-color: #5A9CA3;">
+        <Pane prefHeight="550.0" prefWidth="840.0" style="-fx-background-color: #92ADFF;">
             <children>
-                <Label layoutX="248.0" layoutY="33.0" prefHeight="53.0" prefWidth="304.0" text="New Patient Form" textFill="#FFFFFF">
+                <Label layoutX="248.0" layoutY="33.0" prefHeight="53.0" prefWidth="304.0" text="New Patient Form" textFill="#070707">
                     <font>
                         <Font name="Cambria Bold" size="36.0" />
                     </font></Label>
-                <Label layoutX="172.0" layoutY="111.0" prefHeight="17.0" prefWidth="200.0" text="ID :" textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="110.0" prefHeight="17.0" prefWidth="200.0" text="ID :" textFill="#1b1a1a">
                     <font>
-                        <Font name="Yu Gothic Bold" size="18.0" />
+                        <Font name="Calibri Bold" size="18.0" />
                     </font></Label>
                 <ChoiceBox fx:id="idComboBox" layoutX="408.0" layoutY="108.0" prefWidth="150.0" style="-fx-background-color: #c8cfcf;">
                     <items>
@@ -35,19 +35,19 @@
                     </items>
                 </ChoiceBox>
 
-                <Label layoutX="172.0" layoutY="146.0" prefHeight="17.0" prefWidth="200.0" text="Number :" textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="146.0" prefHeight="17.0" prefWidth="200.0" text="Number :" textFill="#1b1a1a">
                     <font>
-                        <Font name="Yu Gothic Bold" size="18.0" />
+                        <Font name="Calibri Bold" size="18.0" />
                     </font></Label>
                 <TextField fx:id="numberTextField" layoutX="408.0" layoutY="146.0" />
-                <Label layoutX="172.0" layoutY="186.0" prefHeight="17.0" prefWidth="200.0" text="Name :" textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="186.0" prefHeight="17.0" prefWidth="200.0" text="Name :" textFill="#1b1a1a">
                     <font>
-                        <Font name="Yu Gothic Bold" size="18.0" />
+                        <Font name="Calibri Bold" size="18.0" />
                     </font></Label>
                 <TextField fx:id="nameTextField" layoutX="408.0" layoutY="186.0" />
-                <Label layoutX="172.0" layoutY="226.0" prefHeight="17.0" prefWidth="200.0" text="Gender :" textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="226.0" prefHeight="17.0" prefWidth="200.0" text="Gender :" textFill="#1b1a1a">
                     <font>
-                        <Font name="Yu Gothic Bold" size="18.0" />
+                        <Font name="Calibri Bold" size="18.0" />
                     </font></Label>
                 <ChoiceBox fx:id="genderComboBox" layoutX="408.0" layoutY="223.0" prefWidth="150.0" style="-fx-background-color: #c8cfcf;">
                     <items>
@@ -57,24 +57,24 @@
                         </FXCollections>
                     </items>
                 </ChoiceBox>
-                <Label layoutX="172.0" layoutY="266.0" prefHeight="17.0" prefWidth="200.0" text="Disease :" textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="266.0" prefHeight="17.0" prefWidth="200.0" text="Disease :" textFill="#1b1a1a">
                     <font>
-                        <Font name="Yu Gothic Bold" size="18.0" />
+                        <Font name="Calibri Bold" size="18.0" />
                     </font></Label>
                 <TextField fx:id="diseaseTextField" layoutX="408.0" layoutY="266.0" />
-                <Label layoutX="172.0" layoutY="309.0" prefHeight="17.0" prefWidth="200.0" text="Room :" textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="309.0" prefHeight="17.0" prefWidth="200.0" text="Room :" textFill="#1b1a1a">
                     <font>
-                        <Font name="Yu Gothic Bold" size="18.0" />
+                        <Font name="Calibri Bold" size="18.0" />
                     </font></Label>
                 <ChoiceBox fx:id="roomComboBox" layoutX="408.0" layoutY="309.0" prefWidth="150.0" style="-fx-background-color: #c8cfcf;" />
 
-                <Label layoutX="172.0" layoutY="351.0" prefHeight="17.0" prefWidth="200.0" text="Date : " textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="351.0" prefHeight="17.0" prefWidth="200.0" text="Date : " textFill="#1b1a1a">
                     <font>
-                        <Font name="Yu Gothic Bold" size="18.0" />
+                        <Font name="Calibri Bold" size="18.0" />
                     </font></Label>
-                <Label layoutX="172.0" layoutY="394.0" prefHeight="17.0" prefWidth="200.0" text="Deposit :" textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="394.0" prefHeight="17.0" prefWidth="200.0" text="Deposit :" textFill="#1b1a1a">
                     <font>
-                        <Font name="Yu Gothic Bold" size="18.0" />
+                        <Font name="Calibri Bold" size="18.0" />
                     </font></Label>
                 <TextField fx:id="depositTextField" layoutX="408.0" layoutY="394.0" />
                 <Button fx:id="b1" layoutX="179.0" layoutY="466.0" mnemonicParsing="false" onAction="#handleAddPatient" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" text="Add">

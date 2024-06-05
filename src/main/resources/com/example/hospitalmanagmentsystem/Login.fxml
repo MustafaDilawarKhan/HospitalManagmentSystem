@@ -22,9 +22,9 @@
                 <Font name="Calibri Bold" size="20.0" />
             </font>
         </Label>
-        <TextField fx:id="textField" layoutX="150.0" layoutY="20.0" promptText="Enter Username" style="-fx-font-family: 'Tahoma'; -fx-font-size: 15; -fx-background-color: #000000;">
+        <TextField fx:id="textField" layoutX="150.0" layoutY="20.0" promptText="Enter Username" style="-fx-font-family: 'Tahoma'; -fx-font-size: 15; -fx-background-color: #fdfcfc;">
         </TextField>
-        <PasswordField fx:id="passwordField" layoutX="150.0" layoutY="70.0" promptText="Enter Password" style="-fx-font-family: 'Tahoma'; -fx-font-size: 15; -fx-background-color: #000000;">
+        <PasswordField fx:id="passwordField" layoutX="150.0" layoutY="70.0" promptText="Enter Password" style="-fx-font-family: 'Tahoma'; -fx-font-size: 15; -fx-background-color: #faf6f6;">
         </PasswordField>
         <ImageView fx:id="imageView" fitHeight="89.0" fitWidth="86.0" layoutX="350.0" layoutY="49.0">
             <image>
