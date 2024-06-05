@@ -59,7 +59,7 @@ public class NewPatientController extends Application {
 
     @FXML
     private void handleAddPatient() {
-        System.out.println("Add button clicked"); // Debug print statement
+        System.out.println("Add button clicked");
 
         // Get user inputs
         String idType = idComboBox.getValue();
@@ -69,21 +69,21 @@ public class NewPatientController extends Application {
         String disease = diseaseTextField.getText();
         String roomNumber = roomComboBox.getValue();
         LocalDate date = datePicker.getValue();
-        String time = date != null ? date.toString() : null; // Assuming time is represented by the date
+        String time = date != null ? date.toString() : null;
         String deposit = depositTextField.getText();
 
-        // Validate room selection
+
         if (roomNumber == null || roomNumber.isEmpty()) {
-            // Display warning if room is not selected
+
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Room Not Selected");
             alert.setHeaderText(null);
             alert.setContentText("Please select a room before adding the patient!");
             alert.showAndWait();
-            return; // Exit the method if room is not selected
+            return;
         }
 
-        // Print user inputs for debugging
+
         System.out.println("ID Type: " + idType);
         System.out.println("Number: " + number);
         System.out.println("Name: " + name);
@@ -95,9 +95,9 @@ public class NewPatientController extends Application {
         // Check room availability
         boolean roomAvailable = checkRoomAvailability(roomNumber);
 
-        // If room is available, add patient and update room availability
+
         if (roomAvailable) {
-            // Insert into database
+
             try {
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_management_system", "root", "1234");
                 String query = "INSERT INTO patient_info (ID, Number, Name, Gender, Disease, Room_Number, Deposit, Date) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
@@ -109,10 +109,10 @@ public class NewPatientController extends Application {
                 statement.setString(5, disease);
                 statement.setString(6, roomNumber);
                 statement.setString(7, deposit);
-                statement.setString(8, LocalDate.now().toString()); // Current date
+                statement.setString(8, LocalDate.now().toString());
                 statement.executeUpdate();
 
-                // Update room availability to "Occupied"
+
                 String updateQuery = "UPDATE room SET Availability = 'Occupied' WHERE Room_No = ?";
                 PreparedStatement updateStatement = connection.prepareStatement(updateQuery);
                 updateStatement.setString(1, roomNumber);
@@ -131,7 +131,7 @@ public class NewPatientController extends Application {
             }
 
         } else {
-            // Display warning if room is already occupied
+
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Room Occupied");
             alert.setHeaderText(null);
@@ -149,16 +149,16 @@ public class NewPatientController extends Application {
             statement.setString(1, roomNumber);
             ResultSet resultSet = statement.executeQuery();
 
-            // Check if the room exists and is available
+
             if (resultSet.next()) {
                 String availability = resultSet.getString("Availability");
                 available = availability.equals("Available");
             } else {
-                // Room doesn't exist
+
                 System.out.println("Room " + roomNumber + " not found.");
             }
 
-            // Close connections
+
             resultSet.close();
             statement.close();
             connection.close();
@@ -170,7 +170,7 @@ public class NewPatientController extends Application {
 
     @FXML
     private void initialize() {
-        // Populate room combo box when the scene is loaded
+
         populateRoomComboBox();
     }
 
@@ -181,15 +181,15 @@ public class NewPatientController extends Application {
             PreparedStatement statement = connection.prepareStatement(query);
             ResultSet resultSet = statement.executeQuery();
 
-            // Clear existing items
+
             roomComboBox.getItems().clear();
 
-            // Add room numbers to the combo box
+
             while (resultSet.next()) {
                 roomComboBox.getItems().add(resultSet.getString("Room_No"));
             }
 
-            // Close connections
+
             resultSet.close();
             statement.close();
             connection.close();
