@@ -99,6 +99,16 @@ public class ReceptionController {
     @FXML
     private void handleUpdatePatientDetails(ActionEvent event) {
         System.out.println("Update Patient Details button clicked");
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/hospitalmanagmentsystem/UpdatePatient.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Update Patient Details");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
