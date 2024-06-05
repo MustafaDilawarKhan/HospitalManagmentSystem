@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
@@ -113,6 +114,11 @@ public class PatientDischargeController extends Application {
                 connection.close();
 
                 System.out.println("Patient discharged successfully.");
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Patient Discharged");
+                alert.setHeaderText(null);
+                alert.setContentText("Patient discharged successfully.");
+                alert.showAndWait();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
