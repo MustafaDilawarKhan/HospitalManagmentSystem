@@ -85,8 +85,8 @@ public class Department extends Application {
 
     @FXML
     private void handleBack() {
-
-
+        Stage stage = (Stage) tableView.getScene().getWindow();
+        stage.close();
     }
 
     public static void main(String[] args) {

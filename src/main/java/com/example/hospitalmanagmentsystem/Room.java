@@ -105,7 +105,8 @@ public class Room extends Application {
 
     @FXML
     private void handleBack() {
-        // Add your back button action here
+        Stage stage = (Stage) tableView.getScene().getWindow();
+        stage.close();
     }
 
     public static void main(String[] args) {
