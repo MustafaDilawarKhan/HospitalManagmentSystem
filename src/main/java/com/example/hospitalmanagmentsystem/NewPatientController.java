@@ -39,9 +39,7 @@ public class NewPatientController extends Application {
     @FXML
     private TextField nameTextField;
     @FXML
-    private RadioButton r1;
-    @FXML
-    private RadioButton r2;
+    private ChoiceBox<String> genderComboBox;
     @FXML
     private TextField diseaseTextField;
     @FXML
@@ -65,16 +63,14 @@ public class NewPatientController extends Application {
         String idType = idComboBox.getValue();
         String number = numberTextField.getText();
         String name = nameTextField.getText();
-        String gender = r1.isSelected() ? "Male" : "Female";
+        String gender = genderComboBox.getValue();
         String disease = diseaseTextField.getText();
         String roomNumber = roomComboBox.getValue();
         LocalDate date = datePicker.getValue();
         String time = date != null ? date.toString() : null;
         String deposit = depositTextField.getText();
 
-
         if (roomNumber == null || roomNumber.isEmpty()) {
-
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Room Not Selected");
             alert.setHeaderText(null);
@@ -82,7 +78,6 @@ public class NewPatientController extends Application {
             alert.showAndWait();
             return;
         }
-
 
         System.out.println("ID Type: " + idType);
         System.out.println("Number: " + number);
@@ -95,9 +90,7 @@ public class NewPatientController extends Application {
         // Check room availability
         boolean roomAvailable = checkRoomAvailability(roomNumber);
 
-
         if (roomAvailable) {
-
             try {
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital_management_system", "root", "1234");
                 String query = "INSERT INTO patient_info (ID, Number, Name, Gender, Disease, Room_Number, Deposit, Date) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
@@ -112,12 +105,10 @@ public class NewPatientController extends Application {
                 statement.setString(8, LocalDate.now().toString());
                 statement.executeUpdate();
 
-
                 String updateQuery = "UPDATE room SET Availability = 'Occupied' WHERE Room_No = ?";
                 PreparedStatement updateStatement = connection.prepareStatement(updateQuery);
                 updateStatement.setString(1, roomNumber);
                 updateStatement.executeUpdate();
-
 
                 connection.close();
                 Alert successAlert = new Alert(Alert.AlertType.INFORMATION);
@@ -129,9 +120,7 @@ public class NewPatientController extends Application {
             } catch (SQLException e) {
                 System.out.println("Error adding patient: " + e.getMessage());
             }
-
         } else {
-
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Room Occupied");
             alert.setHeaderText(null);
@@ -149,15 +138,12 @@ public class NewPatientController extends Application {
             statement.setString(1, roomNumber);
             ResultSet resultSet = statement.executeQuery();
 
-
             if (resultSet.next()) {
                 String availability = resultSet.getString("Availability");
-                available = availability.equals("Available");
+                available = availability.equalsIgnoreCase("Available");
             } else {
-
                 System.out.println("Room " + roomNumber + " not found.");
             }
-
 
             resultSet.close();
             statement.close();
@@ -170,7 +156,6 @@ public class NewPatientController extends Application {
 
     @FXML
     private void initialize() {
-
         populateRoomComboBox();
     }
 
@@ -181,14 +166,11 @@ public class NewPatientController extends Application {
             PreparedStatement statement = connection.prepareStatement(query);
             ResultSet resultSet = statement.executeQuery();
 
-
             roomComboBox.getItems().clear();
-
 
             while (resultSet.next()) {
                 roomComboBox.getItems().add(resultSet.getString("Room_No"));
             }
-
 
             resultSet.close();
             statement.close();
