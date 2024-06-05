@@ -5,22 +5,37 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.example.hospitalmanagmentsystem.SearchRoomController">
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.SearchRoomController">
     <children>
-        <Label text="Search For Room" layoutX="250" layoutY="11" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
-        <Label text="Status :" layoutX="70" layoutY="70" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
-        <ChoiceBox fx:id="choiceBox" layoutX="170" layoutY="70" />
-        <TableView fx:id="tableView" layoutX="0" layoutY="187" prefWidth="700" prefHeight="210">
+        <Label layoutX="49.0" layoutY="79.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Status :">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <ChoiceBox fx:id="choiceBox" layoutX="127.0" layoutY="77.0" />
+        <TableView fx:id="tableView" layoutX="0" layoutY="187" prefHeight="210" prefWidth="700">
             <columns>
-                <TableColumn fx:id="Room_NoColumn" text="Room Number" prefWidth="150" />
-                <TableColumn fx:id="AvailabilityColumn" text="Availability" prefWidth="150" />
-                <TableColumn fx:id="PriceColumn" text="Price" prefWidth="150" />
-                <TableColumn fx:id="Room_TypeColumn" text="Room Type" prefWidth="150" />
+                <TableColumn fx:id="Room_NoColumn" prefWidth="150" text="Room Number" />
+                <TableColumn fx:id="AvailabilityColumn" prefWidth="150" text="Availability" />
+                <TableColumn fx:id="PriceColumn" prefWidth="150" text="Price" />
+                <TableColumn fx:id="Room_TypeColumn" prefWidth="150" text="Room Type" />
             </columns>
         </TableView>
-        <Button fx:id="searchButton" text="Search" layoutX="200" layoutY="420" onAction="#handleSearch" style="-fx-background-color: black; -fx-text-fill: white;" />
-        <Button fx:id="backButton" text="Back" layoutX="380" layoutY="420" onAction="#handleBack" style="-fx-background-color: black; -fx-text-fill: white;" />
+        <Button fx:id="searchButton" layoutX="200" layoutY="420" onAction="#handleSearch" style="-fx-background-color: black; -fx-text-fill: white;" text="Search" />
+        <Button fx:id="backButton" layoutX="380" layoutY="420" onAction="#handleBack" style="-fx-background-color: black; -fx-text-fill: white;" text="Back" />
+        <Label layoutX="212.0" layoutY="6.0" text="Room Search">
+            <font>
+                <Font name="Calibri Bold" size="50.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="69.0" fitWidth="64.0" layoutX="499.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+            <Image url="@search.png" />
+            </image>
+        </ImageView>
     </children>
 </AnchorPane>

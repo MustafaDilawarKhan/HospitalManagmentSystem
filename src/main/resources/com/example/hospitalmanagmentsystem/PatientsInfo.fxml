@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.PatientsInfoController">
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.PatientsInfoController">
     <children>
-        <TableView fx:id="table" layoutX="10.0" layoutY="40.0" prefHeight="450.0" prefWidth="880.0">
+        <ImageView fitHeight="80.0" fitWidth="83.0" layoutX="10.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@info.png" />
+            </image>
+        </ImageView>
+        <TableView fx:id="table" layoutX="10.0" layoutY="101.0" prefHeight="389.0" prefWidth="880.0">
             <columns>
                 <TableColumn fx:id="idColumn" prefWidth="100.0" text="ID" />
                 <TableColumn fx:id="numberColumn" prefWidth="100.0" text="Number" />
@@ -22,14 +28,16 @@
                 <TableColumn fx:id="dateColumn" prefWidth="100.0" text="Date" />
             </columns>
         </TableView>
-        <Label layoutX="31.0" layoutY="11.0" text="ID" />
-        <Label layoutX="150.0" layoutY="11.0" text="Number" />
-        <Label layoutX="270.0" layoutY="11.0" text="Name" />
-        <Label layoutX="360.0" layoutY="11.0" text="Gender" />
-        <Label layoutX="480.0" layoutY="11.0" text="Disease" />
-        <Label layoutX="600.0" layoutY="11.0" text="Room" />
-        <Label layoutX="800.0" layoutY="11.0" text="Deposit" />
-        <Label layoutX="700.0" layoutY="11.0" text="Date" />
-        <Button fx:id="backButton" layoutX="450.0" layoutY="510.0" mnemonicParsing="false" onAction="#handleBack" text="BACK" />
+        <Button fx:id="backButton" layoutX="416.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="29.0" prefWidth="46.0" text="Back" />
+        <ImageView fitHeight="80.0" fitWidth="73.0" layoutX="779.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@info2.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="239.0" layoutY="27.0" prefHeight="37.0" prefWidth="422.0" text="All Patient Information">
+         <font>
+            <Font name="Segoe UI Bold" size="38.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>
