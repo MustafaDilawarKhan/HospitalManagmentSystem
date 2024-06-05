@@ -10,29 +10,35 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.SearchRoomController">
+<AnchorPane prefHeight="479.0" prefWidth="598.0" style="-fx-background-color: #92ADFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.SearchRoomController">
     <children>
-        <Label layoutX="49.0" layoutY="79.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Status :">
+        <Label layoutX="49.0" layoutY="79.0" prefHeight="25.0" prefWidth="52.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Status :">
             <font>
                 <Font size="14.0" />
             </font></Label>
         <ChoiceBox fx:id="choiceBox" layoutX="127.0" layoutY="77.0" />
-        <TableView fx:id="tableView" layoutX="0" layoutY="187" prefHeight="210" prefWidth="700">
+        <TableView fx:id="tableView" layoutY="192.0" prefHeight="190.0" prefWidth="598.0">
             <columns>
-                <TableColumn fx:id="Room_NoColumn" prefWidth="150" text="Room Number" />
-                <TableColumn fx:id="AvailabilityColumn" prefWidth="150" text="Availability" />
+                <TableColumn fx:id="Room_NoColumn" prefWidth="142.0" text="Room Number" />
+                <TableColumn fx:id="AvailabilityColumn" prefWidth="158.0" text="Availability" />
                 <TableColumn fx:id="PriceColumn" prefWidth="150" text="Price" />
-                <TableColumn fx:id="Room_TypeColumn" prefWidth="150" text="Room Type" />
+                <TableColumn fx:id="Room_TypeColumn" prefWidth="169.0" text="Room Type" />
             </columns>
         </TableView>
-        <Button fx:id="searchButton" layoutX="200" layoutY="420" onAction="#handleSearch" style="-fx-background-color: black; -fx-text-fill: white;" text="Search" />
-        <Button fx:id="backButton" layoutX="380" layoutY="420" onAction="#handleBack" style="-fx-background-color: black; -fx-text-fill: white;" text="Back" />
+        <Button fx:id="searchButton" layoutX="200" layoutY="420" onAction="#handleSearch" style="-fx-background-color: black; -fx-text-fill: white;" text="Search">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font></Button>
+        <Button fx:id="backButton" layoutX="371.0" layoutY="420" onAction="#handleBack" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Back">
+         <font>
+            <Font name="Calibri Bold" size="13.0" />
+         </font></Button>
         <Label layoutX="212.0" layoutY="6.0" text="Room Search">
             <font>
                 <Font name="Calibri Bold" size="50.0" />
             </font>
         </Label>
-        <ImageView fitHeight="69.0" fitWidth="64.0" layoutX="499.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="69.0" fitWidth="64.0" layoutX="120.0" pickOnBounds="true" preserveRatio="true">
             <image>
             <Image url="@search.png" />
             </image>

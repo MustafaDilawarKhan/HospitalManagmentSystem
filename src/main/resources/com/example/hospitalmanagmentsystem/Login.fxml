@@ -10,23 +10,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="203.0" prefWidth="448.0" style="-fx-background-color: #6DA4AA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.LoginController">
+<AnchorPane prefHeight="203.0" prefWidth="448.0" style="-fx-background-color: #92ADFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.LoginController">
     <children>
         <Label layoutX="40.0" layoutY="20.0" text="Username" textFill="BLACK">
             <font>
-                <Font name="Tahoma Bold" size="16.0" />
+                <Font name="Calibri Bold" size="20.0" />
             </font>
         </Label>
         <Label layoutX="40.0" layoutY="70.0" text="Password" textFill="BLACK">
             <font>
-                <Font name="Tahoma Bold" size="16.0" />
+                <Font name="Calibri Bold" size="20.0" />
             </font>
         </Label>
-        <TextField fx:id="textField" layoutX="150.0" layoutY="20.0" promptText="Enter Username" style="-fx-font-family: 'Tahoma'; -fx-font-size: 15; -fx-background-color: #FFB300;">
+        <TextField fx:id="textField" layoutX="150.0" layoutY="20.0" promptText="Enter Username" style="-fx-font-family: 'Tahoma'; -fx-font-size: 15; -fx-background-color: #000000;">
         </TextField>
-        <PasswordField fx:id="passwordField" layoutX="150.0" layoutY="70.0" promptText="Enter Password" style="-fx-font-family: 'Tahoma'; -fx-font-size: 15; -fx-background-color: #FFB300;">
+        <PasswordField fx:id="passwordField" layoutX="150.0" layoutY="70.0" promptText="Enter Password" style="-fx-font-family: 'Tahoma'; -fx-font-size: 15; -fx-background-color: #000000;">
         </PasswordField>
-        <ImageView fx:id="imageView" fitHeight="123.0" fitWidth="120.0" layoutX="348.0" layoutY="38.0">
+        <ImageView fx:id="imageView" fitHeight="89.0" fitWidth="86.0" layoutX="350.0" layoutY="49.0">
             <image>
                 <Image url="@login.png" />
             </image>
