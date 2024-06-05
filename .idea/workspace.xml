@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="329a3add-34e5-4c3d-aaf6-beabd244c8b8" name="Changes" comment="Added remaining functionality to buttons in different GUI screens. See git commit changes for reference">
+    <list default="true" id="329a3add-34e5-4c3d-aaf6-beabd244c8b8" name="Changes" comment="TEST- Back buttons of all GUIs working. Added remaining functionality to close the window of Room and Department GUIs with the back button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/hospitalmanagmentsystem/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/hospitalmanagmentsystem/Login.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717593086729</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="TEST- Back buttons of all GUIs working. Added remaining functionality to close the window of Room and Department GUIs with the back button">
+      <option name="closed" value="true" />
+      <created>1717593512536</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1717593512536</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +297,7 @@
     <MESSAGE value="PatientsDischargeController added." />
     <MESSAGE value="Added functionality to open UpdatePatient GUI via the corresponding Button in reception screen" />
     <MESSAGE value="Added remaining functionality to buttons in different GUI screens. See git commit changes for reference" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added remaining functionality to buttons in different GUI screens. See git commit changes for reference" />
+    <MESSAGE value="TEST- Back buttons of all GUIs working. Added remaining functionality to close the window of Room and Department GUIs with the back button" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST- Back buttons of all GUIs working. Added remaining functionality to close the window of Room and Department GUIs with the back button" />
   </component>
 </project>
