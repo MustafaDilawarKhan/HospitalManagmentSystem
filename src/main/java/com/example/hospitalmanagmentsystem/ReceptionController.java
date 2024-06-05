@@ -108,8 +108,18 @@ public class ReceptionController {
 
     @FXML
     private void handleSearchRoom(ActionEvent event) {
-        System.out.println("Search Room button clicked");
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/hospitalmanagmentsystem/SearchRoom.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.setTitle("Search Room");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
+
 
     @FXML
     private void handleLogout(ActionEvent event) {

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.example.hospitalmanagmentsystem.SearchRoomController">
+    <children>
+        <Label text="Search For Room" layoutX="250" layoutY="11" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+        <Label text="Status :" layoutX="70" layoutY="70" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+        <ChoiceBox fx:id="choiceBox" layoutX="170" layoutY="70" />
+        <TableView fx:id="tableView" layoutX="0" layoutY="187" prefWidth="700" prefHeight="210">
+            <columns>
+                <TableColumn fx:id="Room_NoColumn" text="Room Number" prefWidth="150" />
+                <TableColumn fx:id="AvailabilityColumn" text="Availability" prefWidth="150" />
+                <TableColumn fx:id="PriceColumn" text="Price" prefWidth="150" />
+                <TableColumn fx:id="Room_TypeColumn" text="Room Type" prefWidth="150" />
+            </columns>
+        </TableView>
+        <Button fx:id="searchButton" text="Search" layoutX="200" layoutY="420" onAction="#handleSearch" style="-fx-background-color: black; -fx-text-fill: white;" />
+        <Button fx:id="backButton" text="Back" layoutX="380" layoutY="420" onAction="#handleBack" style="-fx-background-color: black; -fx-text-fill: white;" />
+    </children>
+</AnchorPane>
