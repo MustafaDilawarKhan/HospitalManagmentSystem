@@ -9,25 +9,25 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
-
-<!-- Added import -->
 
 <AnchorPane prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hospitalmanagmentsystem.NewPatientController">
     <children>
         <Pane prefHeight="550.0" prefWidth="840.0" style="-fx-background-color: #5A9CA3;">
             <children>
-                <Label layoutX="301.0" layoutY="-6.0" prefHeight="53.0" prefWidth="304.0" text="New Patient Form" textFill="#FFFFFF">
+                <Label layoutX="248.0" layoutY="33.0" prefHeight="53.0" prefWidth="304.0" text="New Patient Form" textFill="#FFFFFF">
                <font>
                   <Font name="Cambria Bold" size="36.0" />
                </font></Label>
-                <Label layoutX="35.0" layoutY="76.0" prefHeight="17.0" prefWidth="200.0" text="ID :" textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="111.0" prefHeight="17.0" prefWidth="200.0" text="ID :" textFill="#FFFFFF">
                <font>
                   <Font name="Yu Gothic Bold" size="18.0" />
                </font></Label>
-                <ChoiceBox fx:id="idComboBox" layoutX="271.0" layoutY="73.0" prefWidth="150.0" style="-fx-background-color: #032D30;">
+                <ChoiceBox fx:id="idComboBox" layoutX="408.0" layoutY="108.0" prefWidth="150.0" style="-fx-background-color: #032D30;">
                     <items>
                         <FXCollections fx:factory="observableArrayList" xmlns="http://javafx.com/javafx/11.0.1"> <!-- Added xmlns -->
                             <String fx:value="NIC" />
@@ -36,52 +36,57 @@
                     </items>
                 </ChoiceBox>
 
-                <Label layoutX="35.0" layoutY="111.0" prefHeight="17.0" prefWidth="200.0" text="Number :" textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="146.0" prefHeight="17.0" prefWidth="200.0" text="Number :" textFill="#FFFFFF">
                <font>
                   <Font name="Yu Gothic Bold" size="18.0" />
                </font></Label>
-                <TextField fx:id="numberTextField" layoutX="271.0" layoutY="111.0" />
-                <Label layoutX="35.0" layoutY="151.0" prefHeight="17.0" prefWidth="200.0" text="Name :" textFill="#FFFFFF">
+                <TextField fx:id="numberTextField" layoutX="408.0" layoutY="146.0" />
+                <Label layoutX="172.0" layoutY="186.0" prefHeight="17.0" prefWidth="200.0" text="Name :" textFill="#FFFFFF">
                <font>
                   <Font name="Yu Gothic Bold" size="18.0" />
                </font></Label>
-                <TextField fx:id="nameTextField" layoutX="271.0" layoutY="151.0" />
-                <Label layoutX="35.0" layoutY="191.0" prefHeight="17.0" prefWidth="200.0" text="Gender :" textFill="#FFFFFF">
+                <TextField fx:id="nameTextField" layoutX="408.0" layoutY="186.0" />
+                <Label layoutX="172.0" layoutY="226.0" prefHeight="17.0" prefWidth="200.0" text="Gender :" textFill="#FFFFFF">
                <font>
                   <Font name="Yu Gothic Bold" size="18.0" />
                </font></Label>
-                <RadioButton fx:id="r1" layoutX="271.0" layoutY="191.0" mnemonicParsing="false" text="Male" textFill="#FFFFFF" />
-                <RadioButton fx:id="r2" layoutX="350.0" layoutY="191.0" mnemonicParsing="false" text="Female" textFill="#FFFFFF" />
-                <Label layoutX="35.0" layoutY="231.0" prefHeight="17.0" prefWidth="200.0" text="Disease :" textFill="#FFFFFF">
+                <RadioButton fx:id="r1" layoutX="408.0" layoutY="226.0" mnemonicParsing="false" text="Male" textFill="#FFFFFF" />
+                <RadioButton fx:id="r2" layoutX="487.0" layoutY="226.0" mnemonicParsing="false" text="Female" textFill="#FFFFFF" />
+                <Label layoutX="172.0" layoutY="266.0" prefHeight="17.0" prefWidth="200.0" text="Disease :" textFill="#FFFFFF">
                <font>
                   <Font name="Yu Gothic Bold" size="18.0" />
                </font></Label>
-                <TextField fx:id="diseaseTextField" layoutX="271.0" layoutY="231.0" />
-                <Label layoutX="35.0" layoutY="274.0" prefHeight="17.0" prefWidth="200.0" text="Room :" textFill="#FFFFFF">
+                <TextField fx:id="diseaseTextField" layoutX="408.0" layoutY="266.0" />
+                <Label layoutX="172.0" layoutY="309.0" prefHeight="17.0" prefWidth="200.0" text="Room :" textFill="#FFFFFF">
                <font>
                   <Font name="Yu Gothic Bold" size="18.0" />
                </font></Label>
-                <ChoiceBox fx:id="roomComboBox" layoutX="271.0" layoutY="274.0" prefWidth="150.0" style="-fx-background-color: #032D30;" />
+                <ChoiceBox fx:id="roomComboBox" layoutX="408.0" layoutY="309.0" prefWidth="150.0" style="-fx-background-color: #032D30;" />
 
 
-                <Label layoutX="35.0" layoutY="316.0" prefHeight="17.0" prefWidth="200.0" text="Date : " textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="351.0" prefHeight="17.0" prefWidth="200.0" text="Date : " textFill="#FFFFFF">
                <font>
                   <Font name="Yu Gothic Bold" size="18.0" />
                </font></Label>
-                <Label layoutX="35.0" layoutY="359.0" prefHeight="17.0" prefWidth="200.0" text="Deposit :" textFill="#FFFFFF">
+                <Label layoutX="172.0" layoutY="394.0" prefHeight="17.0" prefWidth="200.0" text="Deposit :" textFill="#FFFFFF">
                <font>
                   <Font name="Yu Gothic Bold" size="18.0" />
                </font></Label>
-                <TextField fx:id="depositTextField" layoutX="271.0" layoutY="359.0" />
-                <Button fx:id="b1" layoutX="100.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleAddPatient" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" text="Add">
+                <TextField fx:id="depositTextField" layoutX="408.0" layoutY="394.0" />
+                <Button fx:id="b1" layoutX="179.0" layoutY="466.0" mnemonicParsing="false" onAction="#handleAddPatient" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" text="Add">
                <effect>
                   <InnerShadow />
                </effect></Button>
-                <Button fx:id="b2" layoutX="260.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" text="Back">
+                <Button fx:id="b2" layoutX="427.0" layoutY="466.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" text="Back">
                <effect>
                   <InnerShadow />
                </effect></Button>
-            <DatePicker fx:id="datePicker" layoutX="270.0" layoutY="314.0" />
+            <DatePicker fx:id="datePicker" layoutX="407.0" layoutY="349.0" />
+                <ImageView fitHeight="84.0" fitWidth="127.0" layoutX="143.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@patient.png" />
+                    </image>
+                </ImageView>
             </children>
         </Pane>
     </children>
